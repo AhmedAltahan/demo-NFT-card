@@ -1,0 +1,177 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+html , body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+}
+
+
+
+/******************************************************/
+/* Start design main & card */
+
+div.main {
+    position: relative;
+    height: 100%;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+div.card {
+    width: 300px;
+    /* height: 450px; */
+    background-color:  hsl(215, 32%, 27%);
+    border-radius: 10px;
+}
+
+/* End design main & card */
+/******************************************************/
+
+/******************************************************/
+/* Start design componants of div.card  */
+
+div.img {
+    width: 100%;
+}
+
+div.content {
+    width: 100%;
+}
+
+hr {
+    color: hsl(215, 51%, 70% , 0.3);
+    width: 90%;
+    margin: 20px auto 0;
+    border: 1px solid hsl(215, 51%, 70% , 0.3);
+}
+
+div.footer {
+    width: 100%;
+}
+
+/* End design componants of div.card  */
+/******************************************************/
+
+/******************************************************/
+/* Start design div.img */
+
+div.img img {
+    display: block;
+    width:calc(100% - 30px) ;
+    margin-left: 15px;
+    height: 100%;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+
+div.img img:hover {
+    
+} 
+
+/* End design div.img */
+/******************************************************/
+
+/******************************************************/
+/* Start design div.content  */
+
+div.content h3 {
+    padding-left: 15px;
+    margin: 0;
+    margin-top: 20px;
+    font-weight: 600;
+    padding-top: 5px;
+}
+
+div.content h3 a{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+
+div.content p {
+    margin: 10px 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 24px;
+    color: hsl(215, 51%, 70%);
+}
+
+div.content div.detail {
+    margin-top: 20px;
+    padding: 0 21px 0 14px;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+div.content div.detail span.left {
+    float: left;
+    color:  hsl(178, 100%, 50%);
+}
+
+div.content div.detail span.right {
+    float: right;
+    color: hsl(215, 51%, 70%);
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* End design div.content  */
+/******************************************************/
+
+/******************************************************/
+/* Start design footer */
+
+div.footer {
+    padding-left: 15px;
+    display: flex;
+    justify-content: start;
+}
+
+div.footer img {
+    display: inline-block;
+    margin-top: 10px;
+    border: 2px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+div.footer p {
+    display: inline-block;
+    color: hsl(215, 51%, 70%);
+    margin: 0 ;
+    align-self: center;
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+div.footer p a {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+
+/* End design footer */
+/******************************************************/
+
+.main a:hover {
+    color:  hsl(178, 100%, 50%);
+}

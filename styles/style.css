@@ -69,6 +69,10 @@ div.footer {
 /******************************************************/
 /* Start design div.img */
 
+div.img {
+    position: relative;
+}
+
 div.img img {
     display: block;
     width:calc(100% - 30px) ;
@@ -78,10 +82,33 @@ div.img img {
     border-radius: 10px;
 }
 
+div.img-bg {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:calc(100% - 30px) ;
+    margin-left: 15px;
+    border-radius: 10px;
+    height: 100%;
+    background-color:  hsl(178, 100%, 50% , 0.3);
+}
 
-div.img img:hover {
-    
-} 
+div.img-bg img{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-80% , -80%);
+}
+
+div.img:hover div.img-bg {
+    display: block;
+    cursor: pointer;
+}
+
+
 
 /* End design div.img */
 /******************************************************/
